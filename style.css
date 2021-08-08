@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    
+}
+
+     /* This CSS is used for jast navegation bar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+}
+
+.navbar_brand{
+    width: 100px;
+    height: 100px;
+
+}
+
+.brand_logo{
+    width: 140px;
+    height: 45px;
+}
+
+.language_drop_down {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.language_drop_down:focus{
+    outline: none;
+}
+
+.dropdown_container{
+    border: 1px solid white;
+    padding: 0.4rem;
+}
+
+.Signin_button{
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+}
+
+.navbar_nav_items{
+    display: flex;
+    gap: 20px;
+}
