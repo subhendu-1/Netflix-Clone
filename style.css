@@ -45,7 +45,8 @@ body{
 
 .dropdown_container{
     border: 1px solid white;
-    padding: 0.4rem;
+    padding: 2px -0x;
+    margin: 0px -1px;
     background-color: black;
 }
 
@@ -68,7 +69,7 @@ body{
        /* This CSS is used for jast main section bar start  */
 
        .main_section_bg_image_container{ 
-        height: 450px;
+        height: 479px;
         width: 100%;
     }
     
@@ -81,9 +82,10 @@ body{
     .section_bg_overlay{
         position: absolute;
         inset: 0;
-        height: 236%;
+        height: 479px;
         width: 100%;
-        background: rgba(5, 0, 0, 0.4);;
+        /* background: rgba(5, 0, 0, 0.4); */
+        background-image:  linear-gradient( to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100% );
     }
 
     .main_section_card{
@@ -92,24 +94,102 @@ body{
         display: flex;
         flex-direction: column;
         gap: 10px;
-        top: 25%;
+        top: 15%;
     }
     
     .card_titel{
-        font-weight: 600;
+        font-weight: 800;
         font-size: 28px;
     }
 
     .card_second_para{
         font-weight: 400;
+        font-size: 17px;
+    }
+    .card_second_para{
+        margin: 0px 37px;
+    }
+
+    .email_from_container{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+    }
+    .from_input{
+       border: none;
+       background: transparent;
+       width: 100%;
+       height: 100%;
+       padding: 7px;
+    }
+
+    .from_container{
+        background-color: white;
+        width: 90%;
+        height: 50px;
+        position: relative;
+    }
+    
+    .email_label{
+        color: black;
+        position: absolute;
+        top: 13px;
+        left: 2%;
+        color: rgb(153, 149, 143);
+        transition: 0.5s;
+    }
+
+    .from_input:focus * .email_label {
+        top: 0.14rem;
+        font-size: 10px;
+    }
+    .from_input:not(:placeholder-shown).from_input:not(:focus) * .email_label {
+        top: 0.14rem;
+        font-size: 10px;
+    }
+
+    .primary_button{
+        background-color: #dc030f;
+        border: 1px solid #dc030f;
+        color: white;
+        padding: 11px 19px;
+        border-radius: 2px;
         font-size: 14px;
+        letter-spacing: 1px;
+        margin: 17px;
+    }
+
+    /* This CSS is used for jast main section bar end  */
+
+    /* start CSS featurres adding section */
+      
+    .feature_heading{
+        font-weight: 600;
+    }
+
+    .feature_sub_heading{
+        font-weight: 400;
+    }
+
+    .feature_details{
+        text-align: center;
+    }
+
+    .feature_images_continer{
+        width: 100%;
+    }
+
+    .feature_image{
+        width: 100%;
+    }
+
+    .feature_video_continer{
+        width: 50%;
     }
 
 
-
-
-
-       /* This CSS is used for jast main section bar end  */
+    /* End  CSS featurres adding section */
        
     /* This CSS is use for just PHONE  */
 
@@ -117,14 +197,14 @@ body{
 
 @media (min-width: 768px){
     .navbar{
-        padding: 18px 5px;
+        padding: 18px 14px;
         margin: 6px 5px;
         width: 100%;
         height: 100%;
     }
     .brand_logo {
-        width: 90px;
-        height: 35px;
+        width: 115px;
+        height: 40px;
         
     }
     .Signin_button{
@@ -136,13 +216,15 @@ body{
         }
 
         .dropdown_container{
-            padding: 5px 8px;
+            padding: 4px 6px;
             margin: 6px -7px;
-            background-color: rgb(54, 52, 52);
+            background-color: black;
         }
 
 
         /* This is navbar media quries :end */
+
+        /* start main section CSS */
 
  .main_section{
      height: 100%;
@@ -162,14 +244,11 @@ body{
     object-fit: cover;
 }
 
-/* .section_bg_overlay{
-    position: absolute;
-    inset: 0;
-    height: 708px;
-    width: 100%;
-} */
+.section_bg_overlay{
+    background-image:  linear-gradient( to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100% );
+}
 .main_section_card{
-    top: 72%;
+    top: 85%;
     left: 28%;
     transform: translate(-20%, -20%);
 }
@@ -182,12 +261,18 @@ body{
 
 .card_second_para{
 
-    font-size: 24px;
+    font-size: 23px;
+    margin: 0px 16px;
 }
 
-
-    
+.from_container{
+    height: 61px;
 }
+
+}
+
+    /* main section end CSS */
+
 
 
 
@@ -224,7 +309,10 @@ body{
     }
 
 
+       /* end navigation bar CSS */
 
+
+     /* start main section CSS */
 
     .main_section_bg_image_container{ 
         height: 100%;
@@ -240,8 +328,9 @@ body{
     .section_bg_overlay{
         position: absolute;
         inset: 0;
-        height: 150%;
+        height: 133%;
         width: 100%;
+        background-image:  linear-gradient( to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100% );
     }
 
     /* .main_section_card{
@@ -256,8 +345,8 @@ body{
     } */
 
     .main_section_card{
-        top: 47%;
-        left: 30%;
+        top: 53%;
+        left: 34%;
         transform: translate(-20%, -20%);
     }
         
@@ -269,13 +358,36 @@ body{
     
     .card_second_para{
     
-        font-size: 23px;
+        font-size: 20px;
     }
 
+    .from_container{
+        width: 467px;
+    }
+
+    .email_from_container{
+        flex-direction: row;
+        align-items: center;
+        gap: 1px;
+    }
+
+    .primary_button{
+        
+        background-color: rgb(220, 3, 15);
+        border: 1px solid rgb(220, 3, 15);
+        color: white;
+        padding: 16px 25px;
+        border-radius: 2px;
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin: 20px 1px;
+    }
 
     
-
 }
+   
+
+     /* End main section CSS */
 
   /* This is navbar media quries :start */
 @media (min-width: 1254px){
